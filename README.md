@@ -7,7 +7,6 @@ It is a small Machine Learning based Project which predicts the COVID Status of 
 
 🔸️Video Link: https://youtu.be/RDc-rnQadpc
 
-🔸️LinkedIn Post Link: https://www.linkedin.com/posts/theshivanshvasu_machinelearning-webdevelopment-covid-activity-6858764580353572864-BdxY
 
 # 🔹️About this Project:
 
