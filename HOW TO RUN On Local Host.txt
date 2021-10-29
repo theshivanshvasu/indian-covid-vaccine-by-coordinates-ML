@@ -1,0 +1,4 @@
+1. RUN  - $python detector.py
+(To Create a Pickel File).
+2. RUN - $python app.py
+(To Run on Localhost).

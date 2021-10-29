@@ -1,0 +1,174 @@
+{% extends 'base.html' %}
+
+{% block title %} Homepage {% endblock title %}
+ 
+{% block titleactive1 %} active {% endblock titleactive1 %} 
+
+
+
+    
+
+{% block headthing %}
+
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" >
+<! –– Coded by - Shivansh Vasu @theshivanshvasu ––>
+    
+{% endblock headthing %}
+
+
+       
+
+
+
+
+{% block css %}
+
+input[type=number], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #38ffee;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contain{
+  max-width: 450px;
+  border: 1px solid #38ffee;
+  margin: 40px auto;
+  padding: 40px;
+}
+
+
+.contain h3{
+ color: #38ffee;
+ text-align:centre;
+ font-size: 19px;
+ font-weight:500;
+}
+
+input[type=submit]:hover {
+  background-color: white;
+  color:black;
+  
+}
+
+ .btnn{
+  color:black;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+
+.labe{
+  color:White;
+  margin :  10px;
+}
+
+
+
+
+
+
+
+.cards{
+margin: 0 auto;
+padding: 40px 40px;
+user-select: none; 
+   -webkit-user-select: none; 
+   -khtml-user-select: none; 
+   -moz-user-select: none; 
+   -ms-user-select: none; }
+
+.titlee{
+font-size:30px;
+color : #38ffee;
+font-weight: 500;
+display:flex;
+justify-content: center;
+}
+
+
+
+
+
+
+
+{% endblock css %}
+
+
+{% block body %}
+
+
+
+
+<div class="cards">
+   
+    <div style="font-size:17px; color : white; font-weight: 350; ">
+
+        
+        This is <b style="font-size:22px; color : #38ffee; font-weight: 560;">  A Project based 
+        on Machine Learning </b>  
+         which predicts the COVID Vaccine Status around you on
+      the basis of Geographical Coordinates.  Please go through our  <a
+            href="/aboutproject" target="_blank" style="text-decoration: underline;
+            color: #38ffee; font-weight: 500; "> 
+            "Project Limitations" </a> first before any further actions ! 
+
+    </div>
+
+</div>
+
+
+
+<div class="contain">
+     
+
+ 
+<h3 > Fill following Details to predict the COVID Vaccine Status around you! <br> <br> </h3>
+
+<div>
+  <form action="/prediction"  method="POST">
+  <br>
+    <label class="labe"> Lattitude </label>
+    <input type="number" step="0.01" min="8" max="38" maxlength="4"  name="a" placeholder="Format- 26.76" required>
+    <p style="font-size:13px; color : #38ffee; font-weight: 400;" > Range- 8°4'N and 37°6'N (Indian Coordinates) </p>
+ <br>
+    <label class="labe" >Longitude </label>
+    <input type="number" step="0.01" min="68" max="98" maxlength="4"   name="b" placeholder="Format- 83.37" required>
+    <p style="font-size:13px; color : #38ffee; font-weight: 400;" >  Range- 68°7'E and 97°25'E (Indian Coordinates) </p>
+   
+  <br>
+       <br>  
+    <input class="btnn" type="submit" value="Predict">
+  </form>
+</div>
+
+</div>
+
+
+
+
+<! –– Coded by - Shivansh Vasu @theshivanshvasu ––>
+
+
+
+
+
+
+{% endblock body %}
